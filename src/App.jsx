@@ -73,19 +73,19 @@ function App() {
         type="text"
         value={task}
         onChange={(e) => setTask(e.target.value)}
-        placeholder="Enter your task here"
+        placeholder="할일을 입력하세요."
       />
 
       {/* Category Dropdown */}
-      <p className="field-label">Category</p>
+      <p className="field-label">카테고리</p>
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="Personal">Personal</option>
-        <option value="Work">Work</option>
-        <option value="Shopping">Shopping</option>
+        <option value="Personal">개인</option>
+        <option value="Work">업무</option>
+        <option value="Shopping">과제</option>
       </select>
 
       {/* Due Date Input */}
-      <p className="field-label">Due Date</p>
+      <p className="field-label">종료일자</p>
       <input
         type="date"
         value={dueDate}
@@ -104,7 +104,7 @@ function App() {
                   value={editText}
                   onChange={(e) => setEditText(e.target.value)}
                 />
-                <button onClick={saveEdit}>💾 Save</button>
+                <button onClick={saveEdit}>💾 저장</button>
               </>
             ) : (
               <>
@@ -112,7 +112,7 @@ function App() {
                 <button onClick={() => completeTask(index)}>✅</button>
                 <button onClick={() => deleteTask(index)}>❌</button>
                 <button onClick={() => startEditing(index, t.text)}>
-                  ✏️ Edit
+                  ✏️ 수정
                 </button>
               </>
             )}

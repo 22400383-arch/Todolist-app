@@ -1,63 +1,11 @@
-# React To-Do List App
-
-A simple and interactive To-Do List built with React! 
-Users can add, edit, delete, and mark tasks as completed. Users can mark the type of task and the Due date. Tasks are stored locally and persist after refresh.
-
----
-
-# Features
-- Add tasks with type and due dates
-- Mark tasks as completed
-- Undo completed tasks
-- Edit existing tasks
-- Delete tasks
-- Data is saved using `localStorage` (persists after refresh)
-
----
-
-# Installation & Setup
-
-# 1️ Clone the Repository
-git clone https://github.com/jadec15/react-todo-app.git
-cd react-todo-app
-
-# 2️ Install Dependencies
-Install Node.js if you don't already have it installed. Then run the command:
-npm install
-
-# 3️ Start the Development Server
-npm run dev
-The app will open in your browser at http://localhost:5173/.
-
-# Built With
-React (Vite)
-JavaScript (ES6+)
-CSS (Custom Styling)
-LocalStorage API (for saving tasks)
-
-# How to Use
-Enter a task in the input box and click "Add Task".
-Set a category and due date if needed.
-Click ✅ to mark a task as completed.
-Click ❌ to delete a task.
-Click ✏️ to edit a task.
-Click "Show Completed Tasks ⬇️" to view completed tasks.
-Refresh the page and tasks remain saved
-
-# Customization
-Want to modify the project for yourself? Here’s where you can make changes:
-
-App.jsx → Main logic and UI.
-App.css → Styling.
-localStorage handling → Modify task persistence.
-
-# Contributing
-This is a personal project, and contributions are not accepted at this time.
-
-# License
-This project is open-source under the MIT License.
-
-# Contact
-Have questions? Reach out via: mail: jadecabral96@gmail.com
-
-⭐ If you like this project, give it a star on GitHub! ⭐
+Project Structure: App.jsx- 앱의 Ui 및 기본 코드를 담당하는 파일. / App.css- 앱의 style을 담당하는 파일.
+React Component: App.jsx 에서 form UI로 데이터를 입력받고 CRUD기능을 실행한다.
+Code Analysis: 
+const addTask = () => {
+    if (task.trim() !== "") { 
+      setTasks([...tasks, { text: task, category, dueDate }]);
+      setTask("");
+      setDueDate("");
+    }
+  };
+입력받은 task에 공백이없다면 함수를 실행한다. 이전에 입력받은 task들과 새로 입력받은 데이터를 합친다. 그 후 입력받을 칸을 다시 공백으로 초기화한다. 
