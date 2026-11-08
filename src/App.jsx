@@ -93,9 +93,9 @@ function App() {
         onChange={(e) => setDueDate(e.target.value)}
       />
 
-      <button onClick={addTask}>Add Task</button>
+      <button onClick={addTask}>추가하기</button>
 
-      <h2 className="active-tasks-title">Active Tasks</h2>
+      <h2 className="active-tasks-title">Todo List</h2>
       <ul>
         {tasks.map((t, index) => (
           <li key={index}>
