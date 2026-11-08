@@ -50,8 +50,8 @@ input, select {
 
 
 button {
-  background-color: #2b946c;
-  color: white;
+  background-color: #2c3596;
+  color: rgb(254, 254, 254);
   border: none;
   padding: 10px 15px;
   margin: 5px;
@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #a125c7;
 }
 
 .active-tasks-title {

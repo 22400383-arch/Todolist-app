@@ -69,6 +69,7 @@ function App() {
       <h1>To-Do List</h1>
 
       {/* Task Input */}
+      <p className="field-label">할 일 제목</p>
       <input
         type="text"
         value={task}
