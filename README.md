@@ -1,3 +1,6 @@
+Project 선택이유: 이전에 만들어본 CRUD서비스와 다른사람이 만든 CRUD를 비교하면서 코드가 어떻게 더 깔끔하게 작성될 수 있는지 확인해보려고 선택하였다.
+주요기능: 할일 추가, 할일 목록 수정, 이미 완료한 리스트 확인 및 되돌리기.
+
 Project Structure: App.jsx- 앱의 Ui 및 기본 코드를 담당하는 파일. / App.css- 앱의 style을 담당하는 파일.
 React Component: App.jsx 에서 form UI로 데이터를 입력받고 CRUD기능을 실행한다.
 Code Analysis: 
